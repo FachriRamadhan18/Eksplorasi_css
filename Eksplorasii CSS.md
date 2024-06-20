@@ -11,28 +11,30 @@ Kami dari kelompok AFF mendapatkan materi eksplorasi css bagian Tailwind dan tuj
 
 ### Instalasi Tailwindcss
 1. Buatkan File Index.html
-![[Screenshot 2024-04-15 141823.png]]
+![gambar](AsetTailwind/1.png)
+
 
 
 2. Pastikan  Sudah Menginstall Tailwind CSS, Live Preview Dan Post CSS
-  ![[Screenshot 2024-04-15 135143.png]] ![[Screenshot 2024-04-15 135209.png]]
-
-![[Screenshot 2024-04-15 135155.png]]
-
-
+![gambar](AsetTailwind/2.png)
+![gambar](AsetTailwind/2a.png)
+![gambar](AsetTailwind/2b.png)
 3. Buatkan Struktur HTML Sederhana 
-![[Screenshot 2024-04-15 132348.png]]
+![gambar](AsetTailwind/3.png)
+
 
 4. Masuk ke gitbash lalu ketik Kode Dibawah ini 
 ```
 git init -y
 ```
-![[Screenshot 2024-04-15 132242.png]]
+![gambar](AsetTailwind/4.png)
+
 
 
 
 5. Lalu  Ketik install -d tailwindcss
-![[Screenshot 2024-04-14 114414.png]]
+![gambar](AsetTailwind/5.png)
+
 
 
 >[!info]- Penjelasan 
@@ -44,7 +46,8 @@ npm  isntall -d tailwindcss berfungsi untuk menginstall tailwindcss dan juga dir
 
 
 6.  Masuk ke tailwind.config.js 
-![[Screenshot 2024-04-15 133256.png]]
+![gambar](AsetTailwind/6.png)
+
 dibagian content ketik `["./public/**/*.{html,js}"]`
 
 
@@ -54,14 +57,15 @@ dibagian content ketik `["./public/**/*.{html,js}"]`
 @tailwind component;
 @tailwind utilities;
 ```
-![[Screenshot 2024-04-15 141140.png]]
+![gambar](AsetTailwind/7.png)
+
 
 8.  Ketik  Kode Di Bawah ini
 ```
 npx tailwindcss -i ./src/input.css -o ./public/css/style.css --watch
 ```
 
-![[Screenshot 2024-04-15 135048.png]]
+![gambar](AsetTailwind/8.png)
 
 
 ### Kostumisasi CSS 
@@ -89,11 +93,6 @@ extend: {
 > - `fontFamily`: Bagian ini digunakan untuk menentukan jenis font yang akan digunakan dalam proyek. Kita mendefinisikan dua jenis font: `body` dan `heading`, masing-masing memiliki daftar font dengan preferensi tertentu. Jika font pertama tidak tersedia, font kedua dalam daftar akan digunakan.
 > - `spacing`: Digunakan untuk menambahkan atau memodifikasi ukuran jarak (spacing) yang tersedia. Kita mendefinisikan dua ukuran tambahan di sini, yaitu `72` dan `84`, yang masing-masing setara dengan 18 rem dan 21 rem.
 > - `backgroundImage`: Ini adalah bagian dari konfigurasi yang digunakan untuk menambahkan gambar latar belakang. Kita memberi nama gambar tersebut sebagai `anime` dan menyertakan path ke gambar tersebut menggunakan properti `url()`. Pastikan bahwa path ke gambar tersebut sesuai dengan struktur direktori proyek Anda.
-
-**Cara Mengatur Font dan Aturannya**: 
-```
-
-```
 
 #### KONFIGURASI 
 **Kode Program CSS**
@@ -311,7 +310,8 @@ Kode Program :
 
 
 Dan hasil programnya akan seperti berikut :
-![[Screenshot 2024-04-17 073756.png]]
+![gambar](AsetTailwind/10.png)
+
 Cara Pengerjaan :
 1. Membuat background berwarna biru yang di gradasikan dengan pink dengan cara mengetikkan kode `<body class="bg-gradient-to-br from-green-500 to-pink-500 min-h-screen flex items-center justify-center">`
 2. Lalu membuat box yang berisikan teks "Selamat Datang DI situs ?" dan "Temukan Informasi." dan dua container di dalamnya dengan cara `<h1 class="text-4xl font-bold mb-4 text-center text-gray-800">`,`<p class="text-lg text-gray-700 mb-6">Temukan Informasi .</p>` dan dua box didalammnya
@@ -319,7 +319,8 @@ Cara Pengerjaan :
 4. Lalu mengatur posisi seluruh boxnya dengan kode `<div class="flex items-center justify-center bg-gradient-to-br from-green-400 to-blue-500 p-8 rounded-lg shadow-lg">`
 
 Dan berikut ialah hasil setelah mengatur responsivenya :
-![[Screenshot 2024-04-17 073741.png]]
+![gambar](AsetTailwind/11.png)
+
 1. untuk mengatur responsivenya kita menggunakan kode 
 ```
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">`
@@ -457,8 +458,7 @@ Dan berikut ialah hasil setelah mengatur responsivenya :
 ```
 
 #### Hasil :
-![[Deku.jpg]]
-
+![gambar](AsetTailwind/Deku.jpg)
 
 
 
